@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="no-margin">
+
+  <header class="menu-header">
+    <div class="container">
+      <button class="siteheader__toggler toggler">
+      </button>
+      <a href="#" class="menu-logo">
+        <p>room</p>
+      </a>
+      <nav class="menu-nav">
+        <ul class="menu-nav-list">
+          <li><a href="#">home</a></li>
+          <li><a href="#">shop</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+  <script>
+    var elSiteHeader = document.querySelector('.menu-nav');
+    var elSiteHeaderToggler = document.querySelector('.siteheader__toggler');
+  
+    elSiteHeaderToggler.addEventListener('click', function () {
+      elSiteHeader.classList.toggle('menu-open');
+      elSiteHeaderToggler.classList.toggle('hamburger-open');
+    });
+  </script>
+</body>
+</html>

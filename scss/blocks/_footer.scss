@@ -1,0 +1,143 @@
+.sitefooter {
+  background-color: #2D314D;
+  padding: 48px 0;
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+}
+
+.logos {
+  display: flex;
+  flex-direction: column;
+}
+
+.logos__sns {
+  display: flex;
+  margin-top: 50px;
+}
+
+.logos__sns img {
+  margin-right: 10px;
+}
+
+.footer-navlist {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  max-height: 130px;
+  flex-wrap: wrap;
+  margin-left: 130px;
+  margin-right: auto;
+}
+
+.footer-navlist__item:nth-child(1) {
+  margin-right: 100px;
+}
+
+.footer-navlist__item a {
+  color:#fff;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.footer__right p {
+  margin-top: 25px;
+  color: #aaa;
+}
+
+.footer-logo {
+  display: inline-block;
+  object-fit: cover;
+  width: 140px;
+  height: 20px;
+}
+
+.footer__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer-navlist__item {
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+.footer-navlist__item a:hover {
+  color: #30C88F;
+}
+
+.btn-wrapper {
+  background-color: #fff;
+  display: block;
+  border-radius: 22px;
+  max-width: 160px;
+}
+
+.sitefooter svg{
+  color: #fff;
+  transition: color 0.3s ease;
+  margin-right: 14px;
+}
+
+.sitefooter svg:hover{
+  color: #30C88F;
+}
+
+@include breakpoint-down (920px) {
+  .footer-navlist {
+    margin-left: 30px;
+  }
+}
+
+@include breakpoint-down (800px) {
+  .footer__container {
+    flex-direction: column;
+  }
+
+  .footer-logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .logos__sns {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .logos__sns svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer__right .button-wrapper{
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .footer-navlist {
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: 30%;
+  }
+
+}
+
+@include breakpoint-down (570px) {
+
+  .footer-navlist__item:nth-child(1) {
+    margin-right: 0;
+  }
+  .footer-navlist {
+    max-height: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}

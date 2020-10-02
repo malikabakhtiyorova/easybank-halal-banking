@@ -1,0 +1,39 @@
+.siteheader {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.siteheader__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: block;
+  padding-top: 10px;
+}
+
+.logo-img {
+  display: block;
+}
+
+.siteheader__toggler {
+  display: inline-block;
+  vertical-align: baseline;
+  background: url("../img/hamburger.png"), transparent;
+  width: 30px;
+  height: 30px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: none;
+  display: none;
+  margin-left: 30px;
+}
+
+.siteheader__toggler:hover {
+  box-shadow: 0 0 3px lightseagreen;
+}

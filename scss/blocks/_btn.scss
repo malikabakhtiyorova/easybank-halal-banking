@@ -1,0 +1,45 @@
+.button-wrapper {
+  background-color: #FFFFFF;
+  border-radius: 22px;
+}
+
+.btn {
+  display: inline-block;
+  vertical-align: baseline;
+  padding: 0;
+  margin: 0;
+  border: none;
+  padding: 8px 30px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  color: #FFFFFF;
+  background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+  border-radius: 22px;
+  text-decoration: none;
+  outline: none;
+}
+
+.btn:hover {
+  opacity: 0.5;
+}
+
+.btn:active {
+  box-shadow: 0 0 15px #33D35E;
+}
+
+.btns-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.button-wrapper {
+  max-width: 156px;
+}
+
+@include breakpoint-down (520px) {
+  .siteheader__button {
+    display: none;
+  }
+
+}

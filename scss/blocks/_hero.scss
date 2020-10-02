@@ -1,0 +1,193 @@
+.hero {
+  position: relative;
+  padding: 170px 0;
+}
+
+.hero__wrapper {
+  display: flex;
+}
+
+.hero__content {
+  max-width: 440px;
+  margin-left: 5%;
+}
+
+.hero__img {
+  width: 800px;
+  top: -10%;
+  position: absolute;
+  right: 0;
+}
+
+.hero__content h1 {
+  font-weight: 100;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -1px;
+  color: #2D314D;
+  margin-bottom: 25px;
+}
+
+.hero__content p {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.28125px;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+
+@include breakpoint-down (1200px) {
+  .hero__img {
+    width: 700px;
+  }
+
+  .hero {
+    padding: 120px 0;
+  }
+
+  .hero__content {
+    max-width: 380px;
+  }
+
+  .hero__content h1 {
+    font-size: 50px;
+  }
+}
+
+@include breakpoint-down (1050px) {
+  .hero__img {
+    width: 600px;
+  }
+
+  .hero {
+    padding: 90px 0;
+  }
+
+  .hero__content {
+    max-width: 320px;
+  }
+
+  .hero__content h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
+
+@include breakpoint-down (880px) {
+  .hero__img {
+    width: 500px;
+  }
+
+  .hero {
+    padding: 76px 0;
+  }
+
+  .hero__content {
+    max-width: 270px;
+  }
+
+  .hero__content h1 {
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+
+  .hero__content p {
+    font-size: 15px;
+    text-align:left;
+    margin-bottom: 10px;
+  }
+}
+
+@include breakpoint-down (720px) {
+  .hero__img {
+    width: 400px;
+  }
+
+  .hero {
+    padding: 50px 0;
+  }
+
+  .hero__content {
+    max-width: 240px;
+  }
+
+  .hero__content h1 {
+    font-size: 28px;
+    line-height: 35px;
+    margin-bottom: 10px;
+  }
+
+  .hero__content p {
+    font-size: 14px;
+    text-align:left;
+    margin-bottom: 10px;
+    line-height: 23px;
+  }
+}
+
+@include breakpoint-down (630px) {
+  .hero__img {
+    left: 0;
+    width: 100%;
+  }
+
+  .hero {
+    padding: 80% 0 20% 0;
+  }
+
+  .hero__content {
+    max-width: 100%;
+    padding: 0 10%;
+    text-align: center;
+  }
+
+  .hero__content h1 {
+    font-size: 45px;
+    line-height: 50px;
+    margin-bottom: 20px;
+  }
+
+  .hero__content p {
+    font-size: 14px;
+    text-align:center;
+    margin-bottom: 20px;
+    line-height: 23px;
+  }
+
+  .button-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@include breakpoint-down (570px) {
+  .hero__content h1 {
+    font-size: 40px;
+    line-height: 45px;
+    margin-bottom: 20px;
+  }
+
+  .hero__content p {
+    font-size: 15px;
+    text-align:center;
+    margin-bottom: 20px;
+    line-height: 23px;
+  }
+}
+
+@include breakpoint-down (500px) {
+  .hero__content h1 {
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+
+  .hero__content p {
+    font-size: 15px;
+    text-align:center;
+    margin-bottom: 20px;
+    line-height: 20px;
+  }
+}

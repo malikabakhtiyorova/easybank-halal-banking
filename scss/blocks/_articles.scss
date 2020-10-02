@@ -1,0 +1,171 @@
+.articles {
+  padding: 80px 0;
+}
+
+.articles__heading {
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: -0.714286px;
+  color: #2D314D;
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.articles-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.article {
+  max-width: 255px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.article__content {
+  padding: 24px;
+}
+
+.article__content h4 {
+  font-size: 10px;
+  line-height: 18px;
+  letter-spacing: -0.15625px;
+  color: #9597A5;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+
+.article__content h3:hover {
+  color: rgba(48, 200, 143, 0.5);
+}
+
+.article__content h3 {
+  font-weight: 100;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: -0.285714px;
+color: #2D314D;
+margin: 0;
+margin-bottom: 8px;
+}
+
+.article__content p {
+  font-size: 13px;
+line-height: 18px;
+letter-spacing: -0.203125px;
+color: #9597A5;
+margin: 0;
+}
+
+@include breakpoint-down (1120px) {
+  .articles__heading {
+    margin-left: 7%;
+  }
+  .article {
+    max-width: 400px;
+    margin-bottom: 50px;
+  }
+
+  .article h3 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .article h4 {
+    font-size: 16px;
+  }
+
+  .article p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+
+  .articles-list {
+    justify-content: space-around;
+  }
+
+  .article img {
+    width: 100%;
+    height: 50%;
+  }
+
+}
+
+@include breakpoint-down (900px) {
+  .article {
+    max-width: 60%;
+    height: 100%;
+    margin: 0 10%;
+    margin-bottom: 50px;
+  }
+
+  .articles__heading {
+    text-align: center;
+    margin-left: -10px;
+  }
+
+  
+  .article h3 {
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+  .article h4 {
+    font-size: 18px;
+  }
+
+  .article p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+@include breakpoint-down (550px) {
+  .article h3 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .article h4 {
+    font-size: 16px;
+  }
+
+  .article p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+}
+
+@include breakpoint-down (420px) {
+
+  .article__content {
+    padding-top: 10px;
+  }
+  .article h3 {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 5px;
+  }
+
+  .article h4 {
+    font-size: 14px;
+  }
+
+  .article p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18px;
+    // margin-bottom: 10px;
+  }
+}
